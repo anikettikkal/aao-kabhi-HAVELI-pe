@@ -36,7 +36,7 @@ app.post('/signup', async (req, res) => {
             message: `${emptyfields.join(',')} are required`
         })
     }
-    // validation to check if all fields are filled ends here
+    // validation to check if all fields are filled end here
 
     // validation are check to email are all ready exists start here
     const existingUSer = await User.findOne({ email: email });
