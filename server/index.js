@@ -9,6 +9,7 @@ const app = express();
 app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
+mongoose.set("strictQuery", false);
 
 mongoose.connect(process.env.MONGODB_URL, () => {
     console.log(`Connected to MongoDB`)
@@ -48,7 +49,7 @@ app.post('/signup', async (req, res) => {
     }
     // validation to check if phone alredy exists starts here
     const existingUserPhone = await User.findOne({ phone: phone });
-    if (existingUSerPhone) {
+    if (existingUserPhone) {
         return res.json({
             success: false,
             message: "phone already exists"

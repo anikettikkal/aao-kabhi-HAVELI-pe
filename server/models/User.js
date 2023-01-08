@@ -9,6 +9,6 @@ const userSchema = new Schema({
     role: String,
 }, { timestamps: true})
 
-const User = model("USer", userSchema)
+const User = model("User", userSchema)
 
 export default User
