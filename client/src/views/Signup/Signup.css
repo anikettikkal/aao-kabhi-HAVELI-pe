@@ -1,0 +1,63 @@
+.form-container{
+    width: 420px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color:white;
+    border: 1px solid black;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.user-input{
+    display: block;
+    width:300px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    font-size: 18px;
+    text-align: center;
+    padding-left: 10px;
+    margin-left: 40px;
+    border: 2.8px solid darkgreen;
+}
+.signup-button{
+    font-size: 20px;
+    width:200px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    color:orangered;
+    font-weight: bold;
+    border: 1px solid orangered;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.signup-button:hover{
+    background-color: orangered;
+    border:1px solid orangered;
+    color:white;
+}
+.sticker{
+    height:140px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-wel{
+    height:100px;
+    animation: bounce; 
+    animation-duration: 2s;
+}
+.my-element{
+    font-weight:540;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:green;
+    animation: bounce; 
+    animation-duration: 2s;
+}
+.lbl{
+    font-size: 18px;
+    font-family: sans-serif;
+    color:orangered;
+}
