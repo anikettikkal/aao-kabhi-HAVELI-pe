@@ -7,7 +7,9 @@
     border: 1px solid black;
     box-shadow: 0 14px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-
+.row{
+    background-color: #101110;
+}
 .user-input{
     display: block;
     width:300px;
@@ -26,7 +28,7 @@
     cursor: pointer;
     margin: 10px;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 22px;
     border: 1px solid green;
     background-color: green;
     display: block;
@@ -60,4 +62,20 @@
     font-size: 18px;
     font-family: sans-serif;
     color:orangered;
+}
+.signup-left-row-heading{
+    color:white;
+    font-family: sans-serif;
+}
+.description-left-row-sgn{
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.overlight{
+    color:#22c222;
+    font-weight: bold;
+}
+.image-sgn-leftrow{
+    height: 450px;
 }
