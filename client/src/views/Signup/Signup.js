@@ -41,10 +41,10 @@ function Signup() {
                         <span className='description-left-row-sgn'>"Food for us comes from relations, whether they have wings or fins
                         or roots. That is how we consider food. Food has a culture. It has a history. It has a story and It has a relationships."</span>
                     </div>
-                    <img className='image-sgn-leftrow' src='https://www.roadtocode.org/static/media/header-img.ff5e7c11fbb75ad6e7374834c9354de5.svg' alt='' />
+                    <img className='image-sgn-leftrow' src="https://as2.ftcdn.net/v2/jpg/04/10/00/89/1000_F_410008906_CdaYBie3lFRXiMIvmGjPXrhXoB7ZNsUP.jpg" alt='' />
                 </div>
 
-                <div className='col-md-6'>
+                <div className='col-md-6 mt-4'>
                     <div className='form-container '>
                         <img className='sticker' src='https://ih1.redbubble.net/image.704052516.5520/st,small,845x845-pad,1000x1000,f8f8f8.jpg' alt='' />
                         <span className='my-element display-5'><img className='image-wel' src='https://www.stickers-factory.com/media/catalog/product/cache/1/image/1000x/040ec09b1e35df139433887a97daa66f/2/6/26574_00.png' alt='' />Welcome</span>
