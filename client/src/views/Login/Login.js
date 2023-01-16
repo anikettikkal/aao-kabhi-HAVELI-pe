@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { currentUser } from './../../Util/currentUser'
+import swal from 'sweetalert';
+
 import axios from 'axios'
 import "./Login.css"
 
@@ -8,10 +10,10 @@ function Login() {
     const [password, setPassword] = useState('')
 
     useEffect(() => {
-        if(currentUser){
-            window.location.href="/"
+        if (currentUser) {
+            window.location.href = "/"
         }
-    },[])
+    }, [])
 
     async function loginUser() {
         const response = await axios.post('/login', {
@@ -19,13 +21,23 @@ function Login() {
             password: password,
         })
         console.log(response.data)
-        if(response.data.message){
-            alert(response.data.message)
-            localStorage.setItem('currentUser',  JSON.stringify(response.data.data));
-            window.location.href="/"
+        if (response.data.message) {
+            await swal({
+                title: "Success",
+                text: response.data.message,
+                icon: "success",
+                button: "Aww yiss!",
+            });
+            localStorage.setItem('currentUser', JSON.stringify(response.data.data));
+            window.location.href = "/"
         }
-        else{
-            alert('Error:' + response.data.message)
+        else {
+            await swal({
+                title: "Error",
+                text: response.data.message,
+                icon: "Error",
+                button: "Try Again!",
+              });
             setEmail("")
             setPassword("")
         }
@@ -56,7 +68,7 @@ function Login() {
                                     value={email} onChange={(e) => setEmail(e.target.value)} />
                             </div>
 
-                            
+
                             <div>
                                 <label className='lbl' htmlFor='name'>Password :</label>
                                 <input type='password' id='password' placeholder='Enter Password' className='user-input'

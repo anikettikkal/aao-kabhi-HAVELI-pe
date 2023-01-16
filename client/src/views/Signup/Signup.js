@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { currentUser } from './../../Util/currentUser'
+import swal from 'sweetalert';
+
 import axios from 'axios'
 import "./Signup.css"
 
@@ -26,11 +28,21 @@ function Signup() {
         })
         console.log(response.data)
         if (response.data.success) {
-            alert(response.data.message)
+            await swal({
+                title: "Success",
+                text: response.data.message,
+                icon: "success",
+                button: "Aww yiss!",
+              });
             window.location.href = '/login'
         }
         else {
-            alert(response.data.message)
+            swal({
+                title: "Error",
+                text: response.data.message,
+                icon: "error",
+                button: "Try Again!",
+              });
             setName('')
             setEmail('')
             setPassword('')
